@@ -13,3 +13,4 @@
    about.rst
    introduction.rst
    aboutdoc.rst
+   more.rst
