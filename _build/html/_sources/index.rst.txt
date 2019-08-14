@@ -12,5 +12,6 @@
 
    about.rst
    introduction.rst
-   aboutdoc.rst
    more.rst
+   commonSense.rst
+   aboutdoc.rst
