@@ -24,6 +24,13 @@ RSA算法原理
 
 - https://blog.csdn.net/u014044812/article/details/80723009
 
-- https://blog.csdn.net/u014044812/article/details/80782448#commentBox
+- https://blog.csdn.net/u014044812/article/details/80782448
 
 - https://blog.csdn.net/u014044812/article/details/80866759
+
+程序员能力矩阵
+--------------
+
+http://sijinjoseph.com/programmer-competency-matrix/
+
+
