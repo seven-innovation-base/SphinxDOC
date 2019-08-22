@@ -1,6 +1,18 @@
 干货推荐
 ========
 
+程序员能力矩阵
+--------------
+
+http://sijinjoseph.com/programmer-competency-matrix/
+
+科学上网
+--------
+
+-  https://github.com/bannedbook/fanqiang/wiki
+-  https://fanqiang.software-download.name/
+-  https://shan333.cn/2018/10/07/Proxy/
+
 C/C++相关
 ---------
 
@@ -36,10 +48,5 @@ RSA算法原理
 - https://blog.csdn.net/u014044812/article/details/80782448
 
 - https://blog.csdn.net/u014044812/article/details/80866759
-
-程序员能力矩阵
---------------
-
-http://sijinjoseph.com/programmer-competency-matrix/
 
 
