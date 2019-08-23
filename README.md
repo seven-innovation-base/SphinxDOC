@@ -44,7 +44,7 @@ pipenv shell
 pipenv install
 ```
 
-以上操作完成后，就可以编辑`*.rst`文件进行文档写作了，如果你想优化文档结果，请先阅读[Spinx文档](https://www.sphinx.org.cn/usage/quickstart.html)
+以上操作完成后，就可以编辑`*.rst`文件进行文档写作了，如果你想优化文档结构，请先阅读[Spinx文档](https://www.sphinx.org.cn/usage/quickstart.html)
 
 
 如果你已经编辑完成，请先使用`make html`构建文档进行预览，如果检查无误再`push`到Github并向我么提交pr
