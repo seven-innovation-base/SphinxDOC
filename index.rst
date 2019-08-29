@@ -12,6 +12,7 @@
 
    about.rst
    introduction.rst
+   articles.rst
    more.rst
    commonSense.rst
    aboutdoc.rst

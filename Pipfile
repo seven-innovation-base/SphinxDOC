@@ -1,9 +1,11 @@
 [[source]]
 name = "pypi"
-url = "https://mirrors.aliyun.com/pypi/simple"
+url = "https://pypi.org/simple/"
 verify_ssl = true
 
 [dev-packages]
+sphinx = "*"
+sphinx-rtd-theme = "*"
 
 [packages]
 sphinx = "*"
