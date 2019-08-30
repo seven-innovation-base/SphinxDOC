@@ -99,6 +99,8 @@ StringBuilder的高性能使用方式总结\ `author: CkaiGrac`_
    stringBuilder.append(.....);
    stringBuilder2.append(.....);
 
-从上述的代码中可以看到，\ ``obtainStringBuilder()``\ 方法返回一个StringBuilder对象，方法中首先从ThreadLoc
+从上述的代码中可以看到，\ ``obtainStringBuilder()``\ 方法返回一个StringBuilder对象，方法中首先从ThreadLocal中取StringBuilder然后判断是否为空，如果为空的话则初始化一个StringBuilder对象，大小根据实际情况设置。否则的话就清空StringBuilder的内容来重用。
+对于同一个线程来说，每次调用\ ``obtainStringBuilded()``\ 方法拿到的都是同一个StringBuilder对象。但是对于不同线程来说，两个线程之间的StringBuilder对象是相互独立的，没有任何关系。
+这样的好处是减少申请内存的频率，降低GC（垃圾回收）的发生
 
 .. _`author: CkaiGrac`: https://github.com/CkaiGrac
