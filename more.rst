@@ -49,4 +49,7 @@ RSA算法原理
 
 - https://blog.csdn.net/u014044812/article/details/80866759
 
+`关于模运算的思考`_
+
+.. _关于模运算的思考: http://ceeji.net/blog/mod-in-real/
 
