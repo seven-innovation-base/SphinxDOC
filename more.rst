@@ -49,6 +49,21 @@ RSA算法原理
 
 - https://blog.csdn.net/u014044812/article/details/80866759
 
+
+Git相关
+-------
+
+-  `团队中的Git实践`_
+-  `A successful Git branching model`_
+-  `使用 git rebase 避免無謂的 merge`_
+-  `Git: 教你如何在Commit时有话可说`_
+
+.. _团队中的Git实践: https://ourai.ws/posts/working-with-git-in-team/
+.. _A successful Git branching model: https://nvie.com/posts/a-successful-git-branching-model/
+.. _使用 git rebase 避免無謂的 merge: https://ihower.tw/blog/archives/3843
+.. _`Git: 教你如何在Commit时有话可说`: http://mp.weixin.qq.com/s?__biz=MzAwNDYwNzU2MQ==&mid=401622986&idx=1&sn=470717939914b956ac372667ed23863c&scene=23&srcid=0114ZcTNyAMH8CLwTKlj6CTN#rd&utm_source=tuicool&utm_medium=referral
+
+
 More
 ----
 
