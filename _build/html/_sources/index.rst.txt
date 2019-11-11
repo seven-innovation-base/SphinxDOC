@@ -16,3 +16,4 @@
    more.rst
    commonSense.rst
    aboutdoc.rst
+   Announcement/match.rst
