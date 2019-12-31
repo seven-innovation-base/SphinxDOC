@@ -17,3 +17,5 @@
    commonSense.rst
    aboutdoc.rst
    Announcement/match.rst
+   test.md
+   README.md
