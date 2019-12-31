@@ -1,0 +1,8 @@
+site_name: 数学与计算科学学院创新基地文档
+site_favicon: favicon.png
+
+nav:
+  - Home: index.md
+  - About: about.md
+
+theme: readthedocs
