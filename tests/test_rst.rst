@@ -57,9 +57,6 @@ reStructuredText是Sphinx使用的默认纯文本标记语言。`RST初级读本
 数学公式LaTeX支持
 ~~~~~~~~~~~~~~~~~~~~
 
-
-
-
 `LaTeX支持情况`_
 
 `查看本页reStructuredText源格式`_
