@@ -12,5 +12,5 @@
    commonSense.rst
    aboutdoc.rst
    Announcement/match.rst
-   test.md
+   tests.rst
    README.md

@@ -8,6 +8,11 @@ reStructuredText是Sphinx使用的默认纯文本标记语言。`RST初级读本
 显式标记
 ~~~~~~~~
 
+`了解更多`_
+
+.. _了解更多: https://www.sphinx.org.cn/usage/restructuredtext/basics.html#explicit-markup
+
+
 .. caution::
 
    警告
@@ -65,5 +70,6 @@ reStructuredText是Sphinx使用的默认纯文本标记语言。`RST初级读本
 
 .. _LaTeX支持情况: https://www.sphinx.org.cn/usage/restructuredtext/directives.html#math
 
-.. _查看本页reStructuredText源格式: https://www.baidu.com
+.. _查看本页reStructuredText源格式: https://github.com/seven-innovation-base/SphinxDOC/edit/master/tests/test.rst
+
 

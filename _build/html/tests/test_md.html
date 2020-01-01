@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>应用软件研发部 &mdash; 七院创新基地文档 1.0 文档</title>
+  <title>Markdown 语法渲染测试 &mdash; 七院创新基地文档 1.0 文档</title>
   
 
   
@@ -39,8 +39,8 @@
     <link rel="author" title="关于这些文档" href="../about.html" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="大数据技术与分析部" href="../Bigdata/index.html" />
-    <link rel="prev" title="算法研发部" href="../Algorithms/index.html" /> 
+    <link rel="next" title="rst渲染测试" href="test_rst.html" />
+    <link rel="prev" title="文档渲染测试" href="../tests.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,22 +86,26 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../about.html">数学与计算科学学院创新实践基地简介</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../introduction.html">各部门简介</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../Algorithms/index.html">算法研发部</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">应用软件研发部</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">简介</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../Bigdata/index.html">大数据技术与分析部</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../InformationSecurity/index.html">信息安全部</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">各部门简介</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../articles.html">内部文章</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../more.html">干货推荐</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../commonSense.html">常识须知</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aboutdoc.html">关于本文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Announcement/match.html">数学与计算科学学院第二届程序设计竞赛</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tests.html">文档渲染测试</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tests.html">文档渲染测试</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Markdown 语法渲染测试</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">什么是 Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">1. 制作列表</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">2. 高亮一段代码</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">4、快速插入图片、链接</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">5、更多精彩</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test_rst.html">rst渲染测试</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">关于文档编辑</a></li>
 </ul>
 
@@ -148,15 +152,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../introduction.html">各部门简介</a> &raquo;</li>
+          <li><a href="../tests.html">文档渲染测试</a> &raquo;</li>
         
-      <li>应用软件研发部</li>
+      <li>Markdown 语法渲染测试</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/Software/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tests/test_md.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -169,53 +173,54 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>应用软件研发部<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="markdown">
+<h1>Markdown 语法渲染测试<a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h1>
+<blockquote>
+<div><p><a class="reference external" href="https://commonmark.org/">CommonMark</a>风格，parser-&gt;<a class="reference external" href="https://commonmarkpy.readthedocs.io/en/latest/">commonmarkpy</a>、<a class="reference external" href="https://recommonmark.readthedocs.io/en/latest/index.html">recommonmark</a></p>
+</div></blockquote>
+<hr class="docutils" />
+<div class="section" id="id1">
+<h2>什么是 Markdown<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>Markdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，<strong>粗体</strong> 或者 <em>斜体</em> 某些文字，更棒的是，它还可以</p>
 <div class="section" id="id2">
-<h2>简介<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
-<p>  部门以培养软件工程师为目标，学习方向广泛。主要有：Web前端开发、Web后端开发、Android、ios移动端开发、PC客户端开发。主要通过理论和实践相结合的方式，巩固和拓展学到的知识，打好编程基本功，进而能独立开发出自己的项目。</p>
-<p><strong>鼓励部门内成员多交流合作，一个人单干是很难学下去的，有一个志同道合的伙伴一起前行才能更好的进步。</strong></p>
+<h3>1. 制作列表<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
-<li><p>技术栈简览</p>
+<li><p>I</p>
 <ul>
-<li><p>基础算法和数据结构</p></li>
-<li><p>计算机网络、计算机系统</p></li>
-<li><p>C/C++、Java</p></li>
-<li><p>HTML、CSS、Javascript</p></li>
-<li><p>Python、PHP、Ruby、Rust、Golang 等等</p></li>
-<li><p>Node.js</p></li>
-<li><p>Docker</p></li>
-<li><p>Git、SVN</p></li>
-<li><p>Nginx、Apache</p></li>
-<li><p>了解相关主流框架、类库：</p>
-<ul>
-<li><p>Bootstrap、Materialize</p></li>
-<li><p>Jquery</p></li>
-<li><p>Spring、SpringMVC、MyBatis</p></li>
-<li><p>Flask、Django、Tornado</p></li>
-<li><p>Flutter</p></li>
-<li><p>React</p></li>
-<li><p>Vue.js</p></li>
-<li><p>OpenCV、OpenGL</p></li>
-<li><p>WebGL</p></li>
-<li><p>Qt</p></li>
-<li><p>等等</p></li>
+<li><p>II</p></li>
 </ul>
 </li>
-<li><p>数据库</p>
+<li><p>III</p>
 <ul>
-<li><p>SQL Server</p></li>
-<li><p>SQLite</p></li>
-<li><p>Mysql</p></li>
-<li><p>Redis</p></li>
-<li><p>MongoDB</p></li>
-<li><p>等等</p></li>
-</ul>
-</li>
-<li><p>等等</p></li>
+<li><p>IV</p></li>
+<li><p>V</p></li>
+<li><p>Vi</p></li>
 </ul>
 </li>
 </ul>
+</div>
+<div class="section" id="id3">
+<h3>2. 高亮一段代码<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@requires_authorization</span>
+<span class="k">class</span> <span class="nc">SomeClass</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1"># A comment</span>
+    <span class="k">print</span> <span class="s1">&#39;hello world&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h3>4、快速插入图片、链接<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://github.com/seven-innovation-base/SphinxDOC">https://github.com/seven-innovation-base/SphinxDOC</a></p>
+<p><img alt="和平宣言" src="https://img.vim-cn.com/48/c4ac563eaa0515caea6bef70698c8265f76016.png" /></p>
+</div>
+<div class="section" id="id5">
+<h3>5、更多精彩<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://github.com/seven-innovation-base/SphinxDOC/edit/master/tests/test">观看本页Markdown源格式</a></p>
+<p>你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。<strong>Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。</strong> 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。</p>
+</div>
 </div>
 </div>
 
@@ -227,10 +232,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Bigdata/index.html" class="btn btn-neutral float-right" title="大数据技术与分析部" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="test_rst.html" class="btn btn-neutral float-right" title="rst渲染测试" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../Algorithms/index.html" class="btn btn-neutral float-left" title="算法研发部" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../tests.html" class="btn btn-neutral float-left" title="文档渲染测试" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

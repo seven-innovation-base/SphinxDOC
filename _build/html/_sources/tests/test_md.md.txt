@@ -38,6 +38,6 @@ if __name__ == '__main__':
 
 ### 5、更多精彩
 
-[观看本页Markdown源格式](/test.md)
+[观看本页Markdown源格式](https://github.com/seven-innovation-base/SphinxDOC/edit/master/tests/test.md)
 
 你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。**Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。** 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。
