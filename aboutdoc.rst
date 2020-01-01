@@ -1,15 +1,14 @@
 关于本文档
 ==========
 
-.. image:: https://img.shields.io/github/last-commit/seven-innovation-base/SphinxDOC?color=red   :alt: GitHub last commit
-
-.. image:: https://img.shields.io/github/license/seven-innovation-base/SphinxDOC?color=red   :alt: GitHub
-
-.. image:: https://img.shields.io/github/hacktoberfest/2019/seven-innovation-base/SphinxDOC?color=blue   :alt: GitHub Hacktoberfest combined status
-
-
 本文档使用Sphinx + ReadtheDocs + GitHub
 搭建，所使用的文本标记语言为reStructuredText + Markdown
+
+如果你想参与文档的编辑或者发现文档中有错误，麻烦提交个`issue`_给我们，或者fork本项目，向我们提交pull request，具体如何操作请阅读下本项目的`README`_
+
+.. _README: https://github.com/seven-innovation-base/SphinxDOC
+
+.. _issue: https://github.com/seven-innovation-base/SphinxDOC/issues
 
 参考资源
 --------
