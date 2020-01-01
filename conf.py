@@ -46,7 +46,7 @@ language = 'zh_CH'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', '.gitignore']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', '.gitignore', 'LICENSE']
 
 # https://www.sphinx.org.cn/usage/configuration.html#confval-exclude_patterns
 # html_extra_path = ['venv', '.gitignore']
