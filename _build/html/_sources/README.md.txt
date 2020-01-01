@@ -1,6 +1,6 @@
 # 关于文档编辑
 
-![](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)
+![](https://shansan.top/img/002.jpg)
 
 &ensp;&ensp;本文档基于Sphinx + ReadtheDocs + Github 搭建，使用ReadtheDocs进行托管，所使用的文本标记语言为reStructuredText。文档使用的主题是[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)
 

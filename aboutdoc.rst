@@ -1,6 +1,12 @@
 关于本文档
 ==========
 
+
+.. image:: https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest
+   :target: https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest
+   :alt: Documentation Status
+
+
 本文档使用Sphinx + ReadtheDocs + GitHub
 搭建，所使用的文本标记语言为reStructuredText
 
