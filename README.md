@@ -1,4 +1,4 @@
-# 关于
+# 关于文档编辑
 &ensp;&ensp;本文档基于Sphinx + ReadtheDocs + Github 搭建，使用ReadtheDocs进行托管，所使用的文本标记语言为reStructuredText。文档使用的主题是[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)
 
 &ensp;&ensp;如果你想参与编辑可以先 fork 本仓库，编辑完成后再向我们提交 `pr` 。
@@ -30,7 +30,7 @@ git clone https://github.com/seven-innovation-base/SphinxDOC
 1. 如果你使用pip管理环境
 
 ```python
-pip install spinx sphinx_rtd_theme 
+pip install spinx sphinx_rtd_theme
 ```
 
 2. 如果你使用pipenv管理开发环境，那么你需要先cd到本文档的工程目录下，再使用以下命令安装相关依赖

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Markdown 语法渲染测试 &mdash; 七院创新基地文档 1.0 文档</title>
+  <title>rst渲染测试 &mdash; 七院创新基地文档 1.0 文档</title>
   
 
   
@@ -27,6 +27,7 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -38,7 +39,7 @@
     <link rel="author" title="关于这些文档" href="about.html" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="关于" href="README.html" />
+    <link rel="next" title="关于文档编辑" href="README.html" />
     <link rel="prev" title="数学与计算科学学院第二届程序设计竞赛" href="Announcement/match.html" /> 
 </head>
 
@@ -91,8 +92,13 @@
 <li class="toctree-l1"><a class="reference internal" href="commonSense.html">常识须知</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aboutdoc.html">关于本文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Announcement/match.html">数学与计算科学学院第二届程序设计竞赛</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Markdown 语法渲染测试</a></li>
-<li class="toctree-l1"><a class="reference internal" href="README.html">关于</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">rst渲染测试</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">显式标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">原始标记格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latex">数学公式LaTeX支持</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="README.html">关于文档编辑</a></li>
 </ul>
 
             
@@ -138,13 +144,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Markdown 语法渲染测试</li>
+      <li>rst渲染测试</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/test.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/test.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,8 +163,54 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="markdown">
-<h1>Markdown 语法渲染测试<a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="rst">
+<h1>rst渲染测试<a class="headerlink" href="#rst" title="永久链接至标题">¶</a></h1>
+<p>reStructuredText是Sphinx使用的默认纯文本标记语言。<a class="reference external" href="https://www.sphinx.org.cn/usage/restructuredtext/basics.html#restructuredtext-primer">RST初级读本</a></p>
+<div class="section" id="id2">
+<h2>显式标记<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="admonition caution">
+<p class="admonition-title">警告</p>
+<p>警告</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">危险</p>
+<p>危险</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">错误</p>
+<p>错误</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">提示</p>
+<p>提示</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>重要</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>注释</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>技巧</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>警告</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>原始标记格式<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<iframe src="https://myslide.cn/player/15277" width="562.5" height="386.75" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe></div>
+<div class="section" id="latex">
+<h2>数学公式LaTeX支持<a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}(a + b)^2 = a^2 + 2ab + b^2\\(\alpha\times\beta)^2 = a^2 - 2ab + b^2\end{aligned}\end{align} \]</div>
+<p><a class="reference external" href="https://www.sphinx.org.cn/usage/restructuredtext/directives.html#math">LaTeX支持情况</a></p>
+<p><a class="reference external" href="https://www.baidu.com">查看本页reStructuredText源格式</a></p>
+</div>
 </div>
 
 
@@ -169,7 +221,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="README.html" class="btn btn-neutral float-right" title="关于" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="README.html" class="btn btn-neutral float-right" title="关于文档编辑" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Announcement/match.html" class="btn btn-neutral float-left" title="数学与计算科学学院第二届程序设计竞赛" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

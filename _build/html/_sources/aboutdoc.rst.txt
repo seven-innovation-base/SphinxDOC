@@ -1,7 +1,7 @@
 关于本文档
 ==========
 
-本文档使用Sphinx + ReadtheDocs + Github
+本文档使用Sphinx + ReadtheDocs + GitHub
 搭建，所使用的文本标记语言为reStructuredText
 
 参考资源
