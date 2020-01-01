@@ -75,6 +75,8 @@ html_static_path = ['_static']
 # https://www.sphinx.org.cn/usage/configuration.html#confval-master_doc
 master_doc = 'index'
 
+latex_use_xindy = False
+
 # 文档类型映射
 # https://www.sphinx.org.cn/usage/configuration.html#confval-source_suffix
 source_suffix = {
