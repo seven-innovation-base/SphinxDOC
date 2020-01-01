@@ -52,7 +52,7 @@ pipenv install
 
 如果你已经编辑完成，请先使用`make html`构建文档进行预览(构建好页面位于_build目录中)，如果检查无误再`push`到Github并向我么提交pr
 
-## 许可证
+## LICENSE
 
 Apache-2.0 © Seven Innovation base, see the [license](/LICENSE) for more details.
 
