@@ -6,11 +6,11 @@
    :glob:
 
    about.rst
+   announcement.rst
    introduction.rst
    articles.rst
    more.rst
    commonSense.rst
-   aboutdoc.rst
-   Announcement/match.rst
    tests.rst
+   aboutdoc.rst
    README.md

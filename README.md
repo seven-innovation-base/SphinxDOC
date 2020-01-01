@@ -1,4 +1,7 @@
 # 关于文档编辑
+
+[![Documentation Status](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)](https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest)
+
 &ensp;&ensp;本文档基于Sphinx + ReadtheDocs + Github 搭建，使用ReadtheDocs进行托管，所使用的文本标记语言为reStructuredText。文档使用的主题是[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)
 
 &ensp;&ensp;如果你想参与编辑可以先 fork 本仓库，编辑完成后再向我们提交 `pr` 。
