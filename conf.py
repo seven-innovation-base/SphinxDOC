@@ -46,7 +46,7 @@ language = 'zh_CH'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', '.gitignore', 'LICENSE']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv', '.gitignore', 'LICENSE', 'README.md']
 
 # https://www.sphinx.org.cn/usage/configuration.html#confval-exclude_patterns
 # html_extra_path = ['venv', '.gitignore']
@@ -74,6 +74,8 @@ html_static_path = ['_static']
 # contents.rst not found problem
 # https://www.sphinx.org.cn/usage/configuration.html#confval-master_doc
 master_doc = 'index'
+
+latex_engine = 'xelatex'
 
 # 文档类型映射
 # https://www.sphinx.org.cn/usage/configuration.html#confval-source_suffix

@@ -13,4 +13,3 @@
    commonSense.rst
    tests.rst
    aboutdoc.rst
-   README.md
