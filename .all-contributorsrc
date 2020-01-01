@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "798795982",
+      "name": "GrayHat",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/40200101?v=4",
+      "profile": "https://github.com/798795982",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "SphinxDOC",
+  "projectOwner": "seven-innovation-base",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
