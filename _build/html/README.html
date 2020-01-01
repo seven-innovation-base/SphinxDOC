@@ -147,7 +147,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/README.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -162,12 +162,10 @@
             
   <div class="section" id="id1">
 <h1>关于文档编辑<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p><a class="reference external" href="https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest" /></a></p>
-<p>  本文档基于Sphinx + ReadtheDocs + Github
-搭建，使用ReadtheDocs进行托管，所使用的文本标记语言为reStructuredText。文档使用的主题是<a class="reference external" href="https://pypi.org/project/sphinx-rtd-theme/">sphinx-rtd-theme</a></p>
+<p><img alt="https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest" src="https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest" /></p>
+<p>  本文档基于Sphinx + ReadtheDocs + Github 搭建，使用ReadtheDocs进行托管，所使用的文本标记语言为reStructuredText。文档使用的主题是<a class="reference external" href="https://pypi.org/project/sphinx-rtd-theme/">sphinx-rtd-theme</a></p>
 <p>  如果你想参与编辑可以先 fork 本仓库，编辑完成后再向我们提交 <code class="docutils literal notranslate"><span class="pre">pr</span></code> 。</p>
-<p>  由于本文档的写作基于<a class="reference external" href="https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html">reStructuredText</a>标记语言，如果你熟悉<a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>，可以使用
-<a class="reference external" href="https://pandoc.org/try/">pandoc</a>进行格式转换。</p>
+<p>  由于本文档的写作基于<a class="reference external" href="https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html">reStructuredText</a>标记语言，如果你熟悉<a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>，可以使用 <a class="reference external" href="https://pandoc.org/try/">pandoc</a>进行格式转换。</p>
 <div class="section" id="id2">
 <h2>文档的构建与写作<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
 <p>由于本文档基于<a class="reference external" href="https://www.sphinx.org.cn/index.html">Spinx</a>，所以你需要安装Python的相关环境，建议使用<a class="reference external" href="https://github.com/pypa/pipenv">Pipenv</a>进行环境管理。</p>
@@ -182,18 +180,18 @@
 </ul>
 <p>如果你直接clone了本项目的代码仓库，可以使用<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>进行拉取更新，如果你先<code class="docutils literal notranslate"><span class="pre">fork</span></code>到了自己的仓库而且clone到你本地的是你自己的仓库，那么可以编辑本地项目的<code class="docutils literal notranslate"><span class="pre">.git/config</span></code>（如果你使用的是windows系统，.git目录会默认隐藏）,增加如下配置</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>remote <span class="s2">&quot;origin&quot;</span><span class="o">]</span>
-    <span class="nv">url</span> <span class="o">=</span> https://github.com/seven-innovation-base/SpinxDOC
-    <span class="nv">fetch</span> <span class="o">=</span> +refs/heads/*:refs/remotes/origin/*
+	<span class="nv">url</span> <span class="o">=</span> https://github.com/seven-innovation-base/SpinxDOC
+	<span class="nv">fetch</span> <span class="o">=</span> +refs/heads/*:refs/remotes/origin/*
 </pre></div>
 </div>
 <p>然后使用<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>拉取更新</p>
-<ol class="arabic simple">
+<ol class="simple">
 <li><p>如果你使用pip管理环境</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">spinx</span> <span class="n">sphinx_rtd_theme</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
+<ol class="simple">
 <li><p>如果你使用pipenv管理开发环境，那么你需要先cd到本文档的工程目录下，再使用以下命令安装相关依赖</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 安装pipenv</span>
