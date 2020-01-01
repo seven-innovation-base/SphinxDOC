@@ -1,9 +1,7 @@
 # 关于文档
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-) [![Documentation Status](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)](https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest) ![GitHub](https://img.shields.io/github/license/seven-innovation-base/SphinxDOC?color=blue) ![GitHub issues](https://img.shields.io/github/issues/seven-innovation-base/SphinxDOC) ![GitHub last commit](https://img.shields.io/github/last-commit/seven-innovation-base/SphinxDOC?color=red)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-[![Documentation Status](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)](https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest) ![GitHub](https://img.shields.io/github/license/seven-innovation-base/SphinxDOC?color=blue) ![GitHub issues](https://img.shields.io/github/issues/seven-innovation-base/SphinxDOC) ![GitHub last commit](https://img.shields.io/github/last-commit/seven-innovation-base/SphinxDOC?color=red)
 
 &ensp;&ensp;本文档描述了一个伟大组织的传奇（不接受反驳~。本文档基于伟大的Sphinx项目构建，使用ReadtheDocs进行文档托管，所使用的文本标记（Markup）语言为reStructuredText + Markdown。文档使用的主题是[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)
 
@@ -55,15 +53,7 @@ pipenv install
 
 如果你已经编辑完成，请先使用`make html`构建文档进行预览(构建好页面位于_build目录中)，如果检查无误再`push`到Github并向我么提交pr
 
-## LICENSE
-
-Apache-2.0 © Seven Innovation base, see the [license](/LICENSE) for more details.
-
-
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## 感谢以下小伙伴的付出 ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -78,4 +68,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+## LICENSE
+
+Apache-2.0 © Seven Innovation base, see the [license](/LICENSE) for more details.
