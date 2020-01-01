@@ -239,45 +239,45 @@
 如果余数不为负数，正常求模运算，把余数记录下来</p>
 <p>为了方便转换，定义一个字符数组charList，用于十六进制往后余数对应的字母A、B～F。</p>
 <p><strong>Java代码实现：</strong></p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Collections</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Collections</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
 
-        <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
-        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span><span class="c1">// 手动输入</span>
-        <span class="kt">int</span> <span class="n">base</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">();</span> <span class="c1">// 手动输入</span>
-        <span class="kt">int</span> <span class="n">num_copy</span> <span class="o">=</span> <span class="n">num</span><span class="o">;</span>
-        <span class="kt">int</span> <span class="n">quotient</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span><span class="c1">// 商</span>
-        <span class="n">List</span><span class="o">&lt;</span><span class="n">Character</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span><span class="c1">// 动态数组来存，因为不知道转换后有几位</span>
-        <span class="kt">char</span><span class="o">[]</span> <span class="n">charList</span> <span class="o">=</span> <span class="o">{</span> <span class="sc">&#39;0&#39;</span><span class="o">,</span> <span class="sc">&#39;1&#39;</span><span class="o">,</span> <span class="sc">&#39;2&#39;</span><span class="o">,</span> <span class="sc">&#39;3&#39;</span><span class="o">,</span> <span class="sc">&#39;4&#39;</span><span class="o">,</span> <span class="sc">&#39;5&#39;</span><span class="o">,</span> <span class="sc">&#39;6&#39;</span><span class="o">,</span> <span class="sc">&#39;7&#39;</span><span class="o">,</span> <span class="sc">&#39;8&#39;</span><span class="o">,</span> <span class="sc">&#39;9&#39;</span><span class="o">,</span> <span class="sc">&#39;A&#39;</span><span class="o">,</span> <span class="sc">&#39;B&#39;</span><span class="o">,</span> <span class="sc">&#39;C&#39;</span><span class="o">,</span> <span class="sc">&#39;D&#39;</span><span class="o">,</span> <span class="sc">&#39;E&#39;</span><span class="o">,</span> <span class="sc">&#39;F&#39;</span><span class="o">,</span> <span class="sc">&#39;G&#39;</span><span class="o">,</span> <span class="sc">&#39;H&#39;</span><span class="o">,</span>
-                <span class="sc">&#39;I&#39;</span><span class="o">,</span> <span class="sc">&#39;J&#39;</span> <span class="o">};</span>
-        <span class="k">while</span> <span class="o">(</span><span class="n">num</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-            <span class="kt">int</span> <span class="n">mod</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="n">base</span><span class="o">;</span>
-            <span class="k">if</span> <span class="o">(</span><span class="n">mod</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">quotient</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="n">base</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
-                <span class="n">mod</span> <span class="o">=</span> <span class="n">num</span> <span class="o">-</span> <span class="n">quotient</span> <span class="o">*</span> <span class="n">base</span><span class="o">;</span>
-                <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">charList</span><span class="o">[</span><span class="n">mod</span><span class="o">]);</span>
-                <span class="n">num</span> <span class="o">=</span> <span class="n">quotient</span><span class="o">;</span>
-            <span class="o">}</span><span class="k">else</span><span class="o">{</span>
-                <span class="n">mod</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="n">base</span><span class="o">;</span>
-                <span class="n">num</span> <span class="o">/=</span> <span class="n">base</span><span class="o">;</span>
-                <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">charList</span><span class="o">[</span><span class="n">mod</span><span class="o">]);</span>
-            <span class="o">}</span>
+        <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span><span class="c1">// 手动输入</span>
+        <span class="kt">int</span> <span class="n">base</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span> <span class="c1">// 手动输入</span>
+        <span class="kt">int</span> <span class="n">num_copy</span> <span class="o">=</span> <span class="n">num</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">quotient</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="c1">// 商</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">Character</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="c1">// 动态数组来存，因为不知道转换后有几位</span>
+        <span class="kt">char</span><span class="o">[]</span> <span class="n">charList</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;0&#39;</span><span class="p">,</span> <span class="sc">&#39;1&#39;</span><span class="p">,</span> <span class="sc">&#39;2&#39;</span><span class="p">,</span> <span class="sc">&#39;3&#39;</span><span class="p">,</span> <span class="sc">&#39;4&#39;</span><span class="p">,</span> <span class="sc">&#39;5&#39;</span><span class="p">,</span> <span class="sc">&#39;6&#39;</span><span class="p">,</span> <span class="sc">&#39;7&#39;</span><span class="p">,</span> <span class="sc">&#39;8&#39;</span><span class="p">,</span> <span class="sc">&#39;9&#39;</span><span class="p">,</span> <span class="sc">&#39;A&#39;</span><span class="p">,</span> <span class="sc">&#39;B&#39;</span><span class="p">,</span> <span class="sc">&#39;C&#39;</span><span class="p">,</span> <span class="sc">&#39;D&#39;</span><span class="p">,</span> <span class="sc">&#39;E&#39;</span><span class="p">,</span> <span class="sc">&#39;F&#39;</span><span class="p">,</span> <span class="sc">&#39;G&#39;</span><span class="p">,</span> <span class="sc">&#39;H&#39;</span><span class="p">,</span>
+                <span class="sc">&#39;I&#39;</span><span class="p">,</span> <span class="sc">&#39;J&#39;</span> <span class="p">};</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">num</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">mod</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="n">base</span><span class="p">;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">mod</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">quotient</span> <span class="o">=</span> <span class="n">num</span> <span class="o">/</span> <span class="n">base</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+                <span class="n">mod</span> <span class="o">=</span> <span class="n">num</span> <span class="o">-</span> <span class="n">quotient</span> <span class="o">*</span> <span class="n">base</span><span class="p">;</span>
+                <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">charList</span><span class="o">[</span><span class="n">mod</span><span class="o">]</span><span class="p">);</span>
+                <span class="n">num</span> <span class="o">=</span> <span class="n">quotient</span><span class="p">;</span>
+            <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+                <span class="n">mod</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="n">base</span><span class="p">;</span>
+                <span class="n">num</span> <span class="o">/=</span> <span class="n">base</span><span class="p">;</span>
+                <span class="n">list</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">charList</span><span class="o">[</span><span class="n">mod</span><span class="o">]</span><span class="p">);</span>
+            <span class="p">}</span>
 
-        <span class="o">}</span>
-        <span class="n">Collections</span><span class="o">.</span><span class="na">reverse</span><span class="o">(</span><span class="n">list</span><span class="o">);</span><span class="c1">//数组倒序</span>
-        <span class="n">StringBuilder</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">(</span><span class="mi">256</span><span class="o">);</span>
-        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
-            <span class="n">sb</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">list</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">));</span>
-        <span class="o">}</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">num_copy</span><span class="o">+</span><span class="s">&quot;=&quot;</span><span class="o">+</span><span class="n">sb</span><span class="o">.</span><span class="na">toString</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot;(base&quot;</span> <span class="o">+</span> <span class="n">base</span> <span class="o">+</span> <span class="s">&quot;)&quot;</span><span class="o">);</span>
-        <span class="n">sc</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
-    <span class="o">}</span>
-<span class="o">}</span>
+        <span class="p">}</span>
+        <span class="n">Collections</span><span class="p">.</span><span class="na">reverse</span><span class="p">(</span><span class="n">list</span><span class="p">);</span><span class="c1">//数组倒序</span>
+        <span class="n">StringBuilder</span> <span class="n">sb</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">(</span><span class="mi">256</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">list</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">sb</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="n">list</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">));</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num_copy</span><span class="o">+</span><span class="s">&quot;=&quot;</span><span class="o">+</span><span class="n">sb</span><span class="p">.</span><span class="na">toString</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;(base&quot;</span> <span class="o">+</span> <span class="n">base</span> <span class="o">+</span> <span class="s">&quot;)&quot;</span><span class="p">);</span>
+        <span class="n">sc</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p><strong>C代码实现：</strong></p>

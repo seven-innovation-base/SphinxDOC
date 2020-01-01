@@ -1,24 +1,28 @@
-# 关于文档
+# 关于文档📌
 
 [![Documentation Status](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)](https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest) ![GitHub](https://img.shields.io/github/license/seven-innovation-base/SphinxDOC?color=blue) ![GitHub issues](https://img.shields.io/github/issues/seven-innovation-base/SphinxDOC) ![GitHub last commit](https://img.shields.io/github/last-commit/seven-innovation-base/SphinxDOC?color=red) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-&ensp;&ensp;本文档描述了一个伟大组织的传奇（不接受反驳~。本文档基于伟大的Sphinx项目构建，使用ReadtheDocs进行文档托管，所使用的文本标记（Markup）语言为reStructuredText + Markdown。文档使用的主题是[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)
+>本文档描述了一个伟大组织的传奇（不接受反驳~😊(●'◡'●)）
 
-&ensp;&ensp;如果你想参与编辑可以先 fork 本仓库，编辑完成后再向我们提交 `pr` 。
+本文档基于伟大的[Sphinx](http://www.sphinx-doc.org/en/master/)项目构建（你没想错，伟大的[Python](https://docs.python.org/3/)的文档就是用它整的），我们还使用了同样伟大的GitHub和[ReadtheDocs](https://docs.readthedocs.io/en/stable/index.html)进行文档自动构建和托管，文档写作所使用的文本标记（Markup）语言为reStructuredText + Markdown。文档使用了不怎么帅的主题[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)。
 
-&ensp;&ensp;由于本文档的写作基于[reStructuredText](https://zh-sphinx-doc.readthedocs.io/en/latest/rest.html)标记语言，如果你熟悉[Markdown](https://daringfireball.net/projects/markdown/syntax)，可以使用 [pandoc](https://pandoc.org/try/)进行格式转换。
+**如果各位路过的大佬发现文档有写的不对或者可以改进的地方，欢迎向我们提issue和pull request，谢谢啦**
 
-## 文档的构建与写作
+## 如何参与文档的编辑与维护✍
 
-由于本文档基于[Spinx](https://www.sphinx.org.cn/index.html)，所以你需要安装Python的相关环境，建议使用[Pipenv](https://github.com/pypa/pipenv)进行环境管理。
+由于本文档基于[Sphinx](https://www.sphinx.org.cn/index.html)，而这玩意是个Python项目，所以你需要安装[Python](https://www.python.org/downloads/)的相关环境，你不需要会Python就可编辑和构建文档。文档的主要依赖（Python Packages）如下：
 
-- 如果你之前并未参与编辑，请先clone本项目到本地进行编辑
+```
+sphinx
 
-```bash
-git clone https://github.com/seven-innovation-base/SphinxDOC
+sphinx-rtd-theme
+
+recommonmark
 ```
 
-- 如果你之间已经clone过本项目，请先拉取更新再编辑
+**注意**：
+
+- 如果你之间已经`clone`过本项目，请先拉取更新再编辑
 
 如果你直接clone了本项目的代码仓库，可以使用`git pull`进行拉取更新，如果你先`fork`到了自己的仓库而且clone到你本地的是你自己的仓库，那么可以编辑本地项目的`.git/config`（如果你使用的是windows系统，.git目录会默认隐藏）,增加如下配置
 
@@ -30,27 +34,65 @@ git clone https://github.com/seven-innovation-base/SphinxDOC
 
 然后使用`git pull`拉取更新
 
-1. 如果你使用pip管理环境
+### 一、环境配置
 
-```python
-pip install spinx sphinx_rtd_theme
+在开始前请先`fork`一下这个项目，再`clone`到本地（clone的是你名下的同名仓库）
+
+我们建议你使用`virtualenv+pip`的方式管理本文档构建所依赖的环境，如果你想使用pipenv或者单纯用pip也行，方法如下：
+
+```bash
+git clone https://github.com/your_username/SphinxDOC
 ```
 
-2. 如果你使用pipenv管理开发环境，那么你需要先cd到本文档的工程目录下，再使用以下命令安装相关依赖
+#### pip + virtualenv
 
+```bash
+# 1、转到项目目录
+cd SphinxDOC
+# 2、安装virtualenv
+pip install virtualenv
+# 3、为本项目创建虚拟环境
+virtualenv venv
+# 4、激活虚拟环境
+cd venv/Scripts
+activate
+cd ../..
+# 5、安装依赖
+pip install -r requiremen.txt
+# 6、清除之前构建好的文件
+make clean
+# 7、试下构建文档
+make html
+# 8、构建好的静态文件再_build目录下，点击index.html进行预览
 ```
-# 安装pipenv
+
+#### pipenv
+
+```bash
 pip install pipenv
-# 激活虚拟环境
-pipenv shell
-# 安装依赖
-pipenv install
+
+pipenv install  # 创建虚拟环境，安装依赖
+
+pipenv shell  # 激活虚拟环境
+
+./make clean
+
+./make html  # 构建文档，在_build/html/index.html 预览
 ```
 
-以上操作完成后，就可以编辑`*.rst`文件进行文档写作了，如果你想优化文档结构，请先阅读[Spinx文档](https://www.sphinx.org.cn/usage/quickstart.html)
+### 二、文档编辑与构建
+
+环境搭建好后，就可以编辑`*.rst`、`*.md`文件进行文档编辑了，如果你想新增`rst`、`md`文件或优化文档结构，请先阅读[Sphinx中文文档](https://www.sphinx.org.cn/usage/quickstart.html#defining-document-structure)的文档结构的定义章节
 
 
-如果你已经编辑完成，请先使用`make html`构建文档进行预览(构建好页面位于_build目录中)，如果检查无误再`push`到Github并向我么提交pr
+如果你已经编辑完成，请先使用`make clean`清楚之前构建好的静态文件，然后使用`make html`构建新文档，然后进行效果预览(构建好文件位于**_build/html**目录中)，如果没啥毛病就`push`到GitHub并向我们提交`pull request`
+
+### 拓展阅读
+
+- [Sphinx介绍](https://www.sphinx.org.cn/intro.html#usage)
+- [文档项目信息配置](https://www.sphinx.org.cn/usage/configuration.html#project-information)
+- [Sphinx Markdown支持](https://www.sphinx.org.cn/usage/markdown.html)
+- [RST初级读本](https://www.sphinx.org.cn/usage/restructuredtext/basics.html)
 
 ## 感谢以下小伙伴的付出 ✨
 
@@ -68,6 +110,6 @@ pipenv install
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## LICENSE
+## 许可证📑
 
 Apache-2.0 © Seven Innovation base, see the [license](/LICENSE) for more details.

@@ -2,7 +2,13 @@
 ==========
 
 本文档使用Sphinx + ReadtheDocs + GitHub
-搭建，所使用的文本标记语言为reStructuredText
+搭建，所使用的文本标记语言为reStructuredText + Markdown
+
+如果你想参与文档的编辑或者发现文档中有错误，麻烦提交个`issue`_给我们，或者fork本项目，向我们提交pull request，具体如何操作请阅读下本项目的`README`_
+
+.. _README: https://github.com/seven-innovation-base/SphinxDOC
+
+.. _issue: https://github.com/seven-innovation-base/SphinxDOC/issues
 
 参考资源
 --------
