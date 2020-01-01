@@ -60,6 +60,7 @@ pipenv install
 <table>
   <tr>
     <td align="center"><a href="https://github.com/798795982"><img src="https://avatars2.githubusercontent.com/u/40200101?v=4" width="100px;" alt=""/><br /><sub><b>GrayHat</b></sub></a><br /><a href="https://github.com/seven-innovation-base/SphinxDOC/commits?author=798795982" title="Code">💻</a></td>
+    <td align="center"><a href="https://shansan.top"><img src="https://avatars2.githubusercontent.com/u/39296814?v=4" width="100px;" alt=""/><br /><sub><b>Mr.Ye</b></sub></a><br /><a href="https://github.com/seven-innovation-base/SphinxDOC/commits?author=yeshan333" title="Code">💻</a></td>
   </tr>
 </table>
 
