@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CH" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CH" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>几种常见的博客搭建资源汇总 &mdash; 七院创新基地文档 1.0 文档</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="author" title="关于这些文档" href="../about.html" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="干货推荐" href="../more.html" />
+    <link rel="prev" title="进制转换题目解析" href="进制转换解析.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> 七院创新基地文档
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about.html">数学与计算科学学院创新实践基地简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../announcement.html">基地公告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">各部门简介</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../articles.html">内部文章</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="StringBuilder的高性能使用方式.html">StringBuilder的高性能使用方式总结author: CkaiGrac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="win10自带虚拟机Hyper-V.html">win10自带虚拟机Hyper-V</a></li>
+<li class="toctree-l2"><a class="reference internal" href="进制转换解析.html">进制转换题目解析</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">几种常见的博客搭建资源汇总</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">前言</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">热门方式</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#wordpress">1.WordPress搭建个人博客</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#typecho"><strong>2.Typecho 搭建个人博客</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hugo"><strong>3.使用Hugo搭建个人博客</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hexo-github"><strong>4.Hexo+GitHub搭建博客</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jekyll"><strong>5.Jekyll搭建个人博客</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gitbook"><strong>6.GitBook</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ghost"><strong>7.Ghost搭建博客</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vuepress"><strong>8.VuePress搭建个人博客</strong></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#docsify"><strong>9.docsify搭建个人文档</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">创新基地已知个人博客一览</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../more.html">干货推荐</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commonSense.html">常识须知</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tests.html">文档渲染测试</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutdoc.html">关于本文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">七院创新基地文档</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../articles.html">内部文章</a> &raquo;</li>
+        
+      <li>几种常见的博客搭建资源汇总</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/sharePoint/博客搭建资源汇总.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>几种常见的博客搭建资源汇总<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<blockquote>
+<div><p>本文首发于：<a class="reference external" href="https://lvshaomei.github.io/2020/01/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%B5%84%E6%BA%90%E6%B1%87%E6%80%BB/">博客搭建资源汇总</a>
+作者：<a class="reference external" href="https://github.com/Lvshaomei">LvLv</a>
+略有修改</p>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>前言<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>本文给出了几种常见的个人网站（博客）搭建方式的教程资源。官方文档为主，B站视频教程为辅。比较适合喜欢折腾的同学。不喜欢折腾的可以直接使用CSDN博客、博客园、<a class="reference external" href="https://www.yuque.com/yuque"><strong>语雀</strong></a>等提供的服务。<strong>别忘了博客的初心是记录</strong>。</p>
+<p>常见的个人博客、网站、知识库搭建方式如下：</p>
+<p><img alt="https://img.vim-cn.com/f9/975cc8edad012fd6bb712fdbbc2d311d5309a4.png" src="https://img.vim-cn.com/f9/975cc8edad012fd6bb712fdbbc2d311d5309a4.png" /></p>
+<p>动态管理系统需要使用服务器部署，因为这些系统的数据大都存放在数据库。现今大部分的云服务商（<a class="reference external" href="https://www.alibabacloud.com/zh/campaign/free-trial?spm=a2796.7919406.1389991.dbannerazhfreetrial.5b8c2d23QXhsV9">阿里云</a>、<a class="reference external" href="https://amazonaws-china.com/cn/free/">AWS</a>、<a class="reference external" href="https://cloud.tencent.com/act/free">腾讯云</a>等等）大都提供了一个月甚至一年的服务器试用期。</p>
+<p>依赖静态站点生成器生成的网站不仅可以部署在服务器上，还可以利用一些免费的站点托管服务进行托管，比如<a class="reference external" href="https://pages.github.com/">GitHub</a>、<a class="reference external" href="https://coding.net/help/doc/pages">Coding</a>、<a class="reference external" href="https://coding.net/help/doc/pages">Gitlab</a>等提供的Pages服务和<a class="reference external" href="https://docs.readthedocs.io/en/stable/index.html">Read the Docs</a>的文档托管服务。深入折腾的同学还会接触到一些<a class="reference external" href="https://www.redhat.com/zh/topics/devops/what-is-ci-cd">CI/CD</a>工具链、<a class="reference external" href="https://baike.baidu.com/item/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96/3132?fromtitle=SEO&amp;fromid=102990">SEO</a>技巧等等。</p>
+<p>对于Web开发者，你可能会接触到一些BASS服务提供商，比如<a class="reference external" href="https://www.leancloud.cn/">LeanCloud</a>、<a class="reference external" href="https://www.bmob.cn/">Bmob</a>、<a class="reference external" href="https://firebase.google.com/?hl=zh-cn">firebase</a>。</p>
+</div>
+<div class="section" id="id3">
+<h2>热门方式<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="wordpress">
+<h3>1.WordPress搭建个人博客<a class="headerlink" href="#wordpress" title="永久链接至标题">¶</a></h3>
+<p>首先根据维基百科来介绍一下WordPress：</p>
+<blockquote>
+<div><p><strong>WordPress</strong>是一个以<a class="reference external" href="https://zh.wikipedia.org/wiki/PHP">PHP</a>和<a class="reference external" href="https://zh.wikipedia.org/wiki/MySQL">MySQL</a>为平台的<a class="reference external" href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E5%8F%8A%E5%BC%80%E6%94%BE%E6%BA%90%E4%BB%A3%E7%A0%81%E8%BD%AF%E4%BB%B6">自由开源</a>的博客软件和<a class="reference external" href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">内容管理系统</a>。WordPress具有插件架构和模板系统。截至2018年4月，排名前1000万的网站中超过30.6%使用WordPress。WordPress是最受欢迎的网站<a class="reference external" href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">内容管理系统</a>。WordPress是当前<a class="reference external" href="https://zh.wikipedia.org/wiki/%E5%9B%A0%E7%89%B9%E7%BD%91">因特网</a>上最流行的博客系统。WordPress在最著名的网络发布阶段中脱颖而出。如今，它被使用在超过7000万个站点上。</p>
+</div></blockquote>
+<p><strong>步骤：</strong></p>
+<ul class="simple">
+<li><ol class="simple">
+<li><p>注册域名</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>创建VPS（虚拟专用服务器，即需要购买服务器）</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>解析域名</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>绑定域名</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>上传配置文件</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>安装使用</p></li>
+</ol>
+</li>
+</ul>
+<p><strong>具体详细操作详见如下文档和视频：</strong></p>
+<p><a class="reference external" href="https://wordpress.com/create-blog/">wordpress搭建博客</a></p>
+<p><a class="reference external" href="https://www.jianshu.com/p/d4beb61fc3c0">教你用WordPress搭建一个简单的个人博客</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av9058563/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578290731898">免费搭建自己的wordpress博客&lt;视频教程&gt;</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av2584946/?share_medium=web&amp;share_source=qq&amp;bbid=B8CCEBFD-2865-4967-9C06-001E0279A4A2155809infoc&amp;ts=1578292142882">使用WordPress搭建博客网站</a></p>
+</div>
+<div class="section" id="typecho">
+<h3><strong>2.Typecho 搭建个人博客</strong><a class="headerlink" href="#typecho" title="永久链接至标题">¶</a></h3>
+<p>首先介绍一下Typecho：</p>
+<p><strong>Typecho</strong>是一个基于<a class="reference external" href="https://zh.wikipedia.org/wiki/PHP">PHP</a>的简洁的开源博客程序。它使用多种数据库（<a class="reference external" href="https://zh.wikipedia.org/wiki/MySQL">MySQL</a>、<a class="reference external" href="https://zh.wikipedia.org/wiki/PostgreSQL">PostgreSQL</a>、<a class="reference external" href="https://zh.wikipedia.org/wiki/SQLite">SQLite</a>、<a class="reference external" href="https://zh.wikipedia.org/wiki/MariaDB">MariaDB</a>）储存数据，在<a class="reference external" href="https://zh.wikipedia.org/wiki/GNU%E9%80%9A%E7%94%A8%E5%85%AC%E5%85%B1%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">GNU GPLv2</a>许可证下发行</p>
+<ul class="simple">
+<li><p>搭建步骤：</p>
+<ul>
+<li><ol class="simple">
+<li><p>注册域名</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>购买vps</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>解析域名</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>环境安装</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>安装typecho</p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>具体详细操作流程可参照以下文章和视频：</strong></p>
+<p><a class="reference external" href="https://www.typechodev.com/docs/zh_CN/">typecho文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av58051427/">typecho搭建自己博客网站视频</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av59230340/">使用typecho搭建个人博客视频</a></p>
+</div>
+<div class="section" id="hugo">
+<h3><strong>3.使用Hugo搭建个人博客</strong><a class="headerlink" href="#hugo" title="永久链接至标题">¶</a></h3>
+<p>详细介绍请参照Hugo文档：</p>
+<p><a class="reference external" href="https://www.gohugo.org/doc/">Hugo中文文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av49116509/">Hugo博客搭建视频教程</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av62786612/">使用Hugo搭建个人博客</a></p>
+</div>
+<div class="section" id="hexo-github">
+<h3><strong>4.Hexo+GitHub搭建博客</strong><a class="headerlink" href="#hexo-github" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av24897960?p=3">Hexo视频教程</a></p>
+<p><a class="reference external" href="https://blog.csdn.net/qq_36759224/article/details/82121420">ShanSan的好友TRHX的手把手小白教程</a></p>
+</div>
+<div class="section" id="jekyll">
+<h3><strong>5.Jekyll搭建个人博客</strong><a class="headerlink" href="#jekyll" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://jekyllcn.com/docs/home/">Jekyll文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av13994132/">Jekyll搭建个人博客视频教程</a></p>
+</div>
+<div class="section" id="gitbook">
+<h3><strong>6.GitBook</strong><a class="headerlink" href="#gitbook" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://chrisniael.gitbooks.io/gitbook-documentation/content/index.html">GitBook文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av53704955/">GitBook视频</a></p>
+</div>
+<div class="section" id="ghost">
+<h3><strong>7.Ghost搭建博客</strong><a class="headerlink" href="#ghost" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://ghost.org/docs/">Ghost官方文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av6498530/">Ghost搭建个人博客视频教程</a></p>
+</div>
+<div class="section" id="vuepress">
+<h3><strong>8.VuePress搭建个人博客</strong><a class="headerlink" href="#vuepress" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://www.vuepress.cn/guide/">VuePress中文文档</a></p>
+<p><a class="reference external" href="https://www.bilibili.com/video/av75219827/">VuePress搭建个人博客</a></p>
+</div>
+<div class="section" id="docsify">
+<h3><strong>9.docsify搭建个人文档</strong><a class="headerlink" href="#docsify" title="永久链接至标题">¶</a></h3>
+<p><a class="reference external" href="https://docsify.js.org/#/">docsify官方文档</a></p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>创新基地已知个人博客一览<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jaslli.github.io/">汣禾回星</a></p></li>
+<li><p><a class="reference external" href="https://shansan.top">ShanSan</a></p></li>
+<li><p><a class="reference external" href="https://namezh1.github.io/">Zh1</a></p></li>
+<li><p><a class="reference external" href="https://lvshaomei.github.io/">LvLv</a></p></li>
+<li><p><a class="reference external" href="https://xiongdadeshou.github.io/">兴杏梅</a></p></li>
+<li><p><a class="reference external" href="https://nornoya.github.io/">nornoya</a></p></li>
+<li><p><a class="reference external" href="https://blog.csdn.net/Suzee_">Suzee_</a></p></li>
+<li><p><a class="reference external" href="https://pengliz.github.io/">pengliz</a></p></li>
+<li><p><a class="reference external" href="https://y-lin9.github.io/">Y-lin9</a></p></li>
+<li><p><a class="reference external" href="https://yuzhouxing.github.io/">yuchendong</a></p></li>
+</ul>
+<p><strong>博客、个人网站、知识库需要时常维护，收益不是立马就能看到的。</strong>。有些同学弄可能只是因为一时的新鲜感，说实话，这样起不到任何效果，啥也学不到。</p>
+<p><strong>顺便再提一句，没加GitHub组织的同学快留下你的邮箱：<a class="reference external" href="https://github.com/seven-innovation-base/SphinxDOC/issues/7">https://github.com/seven-innovation-base/SphinxDOC/issues/7</a></strong></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../more.html" class="btn btn-neutral float-right" title="干货推荐" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="进制转换解析.html" class="btn btn-neutral float-left" title="进制转换题目解析" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, SevenInnovationBase
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
