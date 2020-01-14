@@ -1,6 +1,11 @@
 干货推荐
 ========
 
+.. note::
+
+  部分文章需要科学上网
+
+
 程序员能力矩阵
 --------------
 
@@ -48,6 +53,14 @@ RSA算法原理
 - https://blog.csdn.net/u014044812/article/details/80782448
 
 - https://blog.csdn.net/u014044812/article/details/80866759
+
+
+UI/UX
+------
+
+- `7 steps to become a UI/UX designer`_
+
+.. _7 steps to become a UI/UX designer: https://blog.nicolesaidy.com/7-steps-to-become-a-ui-ux-designer-8beed7639a95
 
 
 Git相关
