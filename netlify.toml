@@ -11,7 +11,7 @@
   publish = "_build/html/"
 
   # Default build command.
-  command = "pipenv install && make clean && make html"
+  command = "bash netlify-docs.sh"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
