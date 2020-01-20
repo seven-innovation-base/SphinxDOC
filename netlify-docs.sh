@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-pipenv install
+pip install -r requirements.txt
 make clean
 make html
