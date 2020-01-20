@@ -11,9 +11,7 @@
   publish = "_build/html/"
 
   # Default build command.
-  command = "pip freeze > requirements.txt"
-  command = "make clean"
-  command = "make html"
+  command = "pipenv install && make clean && make html"
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
