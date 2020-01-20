@@ -15,4 +15,5 @@
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
 [context.deploy-preview]
+  command = "bash netlify-docs.sh"
   publish = "_build/html/"
