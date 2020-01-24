@@ -24,6 +24,12 @@
 .. _Bash: https://baike.sogou.com/v2381315.htm?fromTitle=bash
 .. _引自维基百科: https://zh.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%
 
+.. Note::
+
+   `RFC`_ ，请求意见稿（英语：Request for Comments，缩写：RFC）是由互联网工程任务组（IETF）发布的一系列备忘录。文件收集了有关互联网相关信息，以及UNIX和互联网社群的软件文件，以编号排定。当前RFC文件是由互联网协会（ISOC）赞助发行。
+   RFC始于1969年，由当时就读加州大学洛杉矶分校（UCLA）的斯蒂芬·克罗克（Stephen D. Crocker）用来记录有关ARPANET开发的非正式文档，他是第一份RFC文档的撰写者。最终演变为用来记录互联网规范、协议、过程等的标准文件。基本的互联网通信协议都有在RFC文件内详细说明。RFC文件还额外加入许多的论题在标准内，例如对于互联网新开发的协议及发展中所有的记录。
+
+.. _RFC: https://tools.ietf.org/rfc/index
 
 信息安全相关
 ------------
