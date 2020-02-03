@@ -22,7 +22,7 @@ recommonmark
 
 **注意**：
 
-- 如果你之间已经`clone`过本项目，请先拉取更新再编辑
+- 如果你之前已经`clone`过本项目，请先拉取更新再编辑
 
 如果你直接clone了本项目的代码仓库，可以使用`git pull`进行拉取更新，如果你先`fork`到了自己的仓库而且clone到你本地的是你自己的仓库，那么可以编辑本地项目的`.git/config`（如果你使用的是windows系统，.git目录会默认隐藏）,增加如下配置
 
@@ -86,7 +86,7 @@ pipenv shell  # 激活虚拟环境
 
 md的格式有限，可以考虑用rst，可以一开始可以用Markdown写然后用[pandoc](https://pandoc.org/try/)将Markdown格式转换为restructText继续编辑。
 
-如果你已经编辑完成，请先使用`make clean`清楚之前构建好的静态文件，然后使用`make html`构建新文档，然后进行效果预览(构建好文件位于**_build/html**目录中)，如果没啥毛病就`push`到GitHub并向我们提交`pull request`
+如果你已经编辑完成，请先使用`make clean`清除之前构建好的静态文件，然后使用`make html`构建新文档，然后进行效果预览(构建好文件位于**_build/html**目录中)，如果没啥毛病就`push`到GitHub并向我们提交`pull request`
 
 ### 拓展阅读
 
