@@ -1,6 +1,8 @@
 # 关于文档📌
 
-[![Documentation Status](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)](https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest) ![GitHub](https://img.shields.io/github/license/seven-innovation-base/SphinxDOC?color=blue) ![GitHub issues](https://img.shields.io/github/issues/seven-innovation-base/SphinxDOC) ![GitHub last commit](https://img.shields.io/github/last-commit/seven-innovation-base/SphinxDOC?color=red) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)<!-- ALL-CONTRIBUTORS-BADGE:END --> [![Netlify Status](https://api.netlify.com/api/v1/badges/020b729a-30f0-4330-8f85-c0a9bcbd90a3/deploy-status)](https://app.netlify.com/sites/vibrant-lumiere-4558d4/deploys)
+[![Documentation Status](https://readthedocs.org/projects/seveninnovationbasedoc/badge/?version=latest)](https://seveninnovationbasedoc.readthedocs.io/zh_CN/latest/?badge=latest) ![GitHub](https://img.shields.io/github/license/seven-innovation-base/SphinxDOC?color=blue) ![GitHub issues](https://img.shields.io/github/issues/seven-innovation-base/SphinxDOC) ![GitHub last commit](https://img.shields.io/github/last-commit/seven-innovation-base/SphinxDOC?color=red)  [![Netlify Status](https://api.netlify.com/api/v1/badges/020b729a-30f0-4330-8f85-c0a9bcbd90a3/deploy-status)](https://app.netlify.com/sites/vibrant-lumiere-4558d4/deploys)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 >本文档描述了一个伟大组织的传奇（不接受反驳~😊(●'◡'●)）
 
@@ -104,6 +106,7 @@ md的格式有限，可以考虑用rst，可以一开始可以用Markdown写然�
   <tr>
     <td align="center"><a href="https://github.com/798795982"><img src="https://avatars2.githubusercontent.com/u/40200101?v=4" width="100px;" alt=""/><br /><sub><b>GrayHat</b></sub></a><br /><a href="https://github.com/seven-innovation-base/SphinxDOC/commits?author=798795982" title="Code">💻</a></td>
     <td align="center"><a href="https://shansan.top"><img src="https://avatars2.githubusercontent.com/u/39296814?v=4" width="100px;" alt=""/><br /><sub><b>Mr.Ye</b></sub></a><br /><a href="https://github.com/seven-innovation-base/SphinxDOC/commits?author=yeshan333" title="Code">💻</a></td>
+    <td align="center"><a href="https://mrgo123.github.io"><img src="https://avatars1.githubusercontent.com/u/53072382?v=4" width="100px;" alt=""/><br /><sub><b>yizhuang</b></sub></a><br /><a href="https://github.com/seven-innovation-base/SphinxDOC/commits?author=MrGo123" title="Documentation">📖</a></td>
   </tr>
 </table>
 
