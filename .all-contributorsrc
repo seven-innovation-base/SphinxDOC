@@ -22,6 +22,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "MrGo123",
+      "name": "yizhuang",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/53072382?v=4",
+      "profile": "https://mrgo123.github.io",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
