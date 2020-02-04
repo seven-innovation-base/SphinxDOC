@@ -22,19 +22,33 @@ sphinx-rtd-theme
 recommonmark
 ```
 
-**注意**：
+**注意❗❗❗**：
 
-- 如果你之前已经`clone`过本项目，请先拉取更新再编辑
+参与维护前请先 fork 本仓库，然后基于 fork 后的仓库的 master 分支创建一个**新的分支**（名字随意），修改后提交到这个新的分支，然后基于这个分支向本仓库发送 pull request，会有人对你的 pull request 进行 review，review 通过后会合并到本仓库
 
-如果你直接clone了本项目的代码仓库，可以使用`git pull`进行拉取更新，如果你先`fork`到了自己的仓库而且clone到你本地的是你自己的仓库，那么可以编辑本地项目的`.git/config`（如果你使用的是windows系统，.git目录会默认隐藏）,增加如下配置
+如果后续想要继续参与维护，参考以下commit log的**同步流程**：
 
-```bash
-[remote "origin"]
-	url = https://github.com/seven-innovation-base/SpinxDOC
-	fetch = +refs/heads/*:refs/remotes/origin/*
+1. 添加本仓库为你 fork 后仓库的远程上游 `upstream`
+
+```shell
+git remote add upstream https://github.com/seven-innovation-base/SphinxDOC.git
+# 或者
+git remote add upstream git@github.com:seven-innovation-base/SphinxDOC.git
 ```
 
-然后使用`git pull`拉取更新
+2. 同步远程上游 upstream 的变更
+
+```shell
+git fetch upstream
+```
+
+3. 将远程上游的变更合并到你 fork 后的仓库的 master 分支中，保证你的 master 分支永远都是最新的
+
+```shell
+git merge upstream/master
+```
+
+然后再基于 master 分支新建新的分支，提交你的变更到你所创建的新的分支，最后提交 pull request
 
 ### 一、环境配置
 
