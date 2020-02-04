@@ -22,17 +22,31 @@ recommonmark
 
 **注意**：
 
-- 如果你之前已经`clone`过本项目，请先拉取更新再编辑
+- 如果你直接clone了本项目的代码仓库，可以使用`git pull`进行拉取更新
 
-如果你直接clone了本项目的代码仓库，可以使用`git pull`进行拉取更新，如果你先`fork`到了自己的仓库而且clone到你本地的是你自己的仓库，那么可以编辑本地项目的`.git/config`（如果你使用的是windows系统，.git目录会默认隐藏）,增加如下配置
+- 如果你先`fork`到了自己的仓库而且clone到你本地的是你自己的仓库
+
+方法一：可以编辑本地项目的`.git/config`（如果你使用的是windows系统，.git目录会默认隐藏）,增加如下配置
 
 ```bash
 [remote "origin"]
 	url = https://github.com/seven-innovation-base/SpinxDOC
 	fetch = +refs/heads/*:refs/remotes/origin/*
 ```
+然后使用`git pull`拉取更新。
 
-然后使用`git pull`拉取更新
+方法二：通过如下分支合并操作从本仓更新你自己的仓库
+```git
+1.添加本仓为你自己fork后仓库的上游
+$ git remote add upstream  https://github.com/seven-innovation-base/SphinxDOC.git
+
+2.同步fetch本仓库代码到本地仓库的缓冲区
+$ git checkout master && git fetch upstream
+
+3.将本仓库代码合并至自己fork后的仓库(master分支)中，保证自己的master分支永远是最新版本
+$ git merge upstream/master
+```
+然后你自己的仓库就是最新版的了。
 
 ### 一、环境配置
 
