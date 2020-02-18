@@ -8,6 +8,7 @@
    about.rst
    announcement.rst
    introduction.rst
+   goldenWords.rst
    articles.rst
    more.rst
    commonSense.rst

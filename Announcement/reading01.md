@@ -57,4 +57,3 @@ issue: https://github.com/seven-innovation-base/SphinxDOC/issues/7
 - **如果还不会Git的话，到练习仓试手👉[Git2Github-practice](https://github.com/seven-innovation-base/Git2Github-practice/tree/master/%E8%87%B4%E5%A4%A7%E4%B8%80)，Git是现阶段必修的一门技术，多了解下GitHub，开源正经历着前所未有的繁荣，当你迈出第一步的时候，你就比那些踌躇不定的同学强了**
 
 <p align="right"><strong>Cloudys<br>2020年1月2日</strong></p>
-<p align="right"><img src="https://img.vim-cn.com/b6/d6801ab34bacc7264df2e7a07314059f6ebfb6.gif"></p>
