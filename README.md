@@ -8,7 +8,7 @@
 
 本文档基于伟大的[Sphinx](http://www.sphinx-doc.org/en/master/)项目构建（你没想错，伟大的[Python](https://docs.python.org/3/)的文档就是用它整的），我们还使用了同样伟大的GitHub和[ReadtheDocs](https://docs.readthedocs.io/en/stable/index.html)进行文档自动构建和托管，文档写作所使用的文本标记（Markup）语言为reStructuredText + Markdown。文档使用了不怎么帅的主题[sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)。
 
-**如果各位路过的大佬发现文档有写的不对或者可以改进的地方，欢迎向我们提issue和pull request，谢谢啦**
+**如果各位路过的大佬发现文档有写的不对或者可以改进的地方，欢迎向我们提issue和pull request，谢谢啦(●'◡'●)**
 
 ## 如何参与文档的编辑与维护✍
 
