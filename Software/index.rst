@@ -4,42 +4,64 @@
 简介
 ----
 
-  部门以培养软件工程师为目标，学习方向广泛。主要有：Web前端开发、Web后端开发、Android、ios移动端开发、PC客户端开发。主要通过理论和实践相结合的方式，巩固和拓展学到的知识，打好编程基本功，进而能独立开发出自己的项目。
+部门以培养计算机技术领域优秀的工程师为目标，学习方向广泛。主要有：Web 开发、移动端开发（Android、iOS、Hybrid）、PC 客户端开发、DevOps、云计算、云原生等等。
 
-**鼓励部门内成员多交流合作，一个人单干是很难学下去的，有一个志同道合的伙伴一起前行才能更好的进步。**
+对部门成员的希冀
+----------------
 
--  技术栈简览
+1. 希望各成员能通过理论和\ **实践**\ 相结合的方式，巩固和拓展学到的知识，打好编程基本功
 
-   -  基础算法和数据结构
-   -  计算机网络、计算机系统
-   -  C/C++、Java
-   -  HTML、CSS、Javascript
-   -  Python、PHP、Ruby、Rust、Golang 等等
-   -  Node.js
-   -  Docker
-   -  Git、SVN
-   -  Nginx、Apache
-   -  了解相关主流框架、类库：
+2. 兴趣为导，$ 为辅，本科阶段深度耕耘一个技术领域2-3年
 
-      -  Bootstrap、Materialize
-      -  Jquery
-      -  Spring、SpringMVC、MyBatis
-      -  Flask、Django、Tornado
-      -  Flutter
-      -  React
-      -  Vue.js
-      -  OpenCV、OpenGL
-      -  WebGL
-      -  Qt
-      -  等等
+3. 开源正经历着前所未有，希望各成员积极参与一些优秀的开源项目的文档贡献和代码贡献
 
-   -  数据库
+**Slogan**: 只会侃侃而谈却做不出来、做不到就是个屁！！！
 
-      -  SQL Server
-      -  SQLite
-      -  Mysql
-      -  Redis
-      -  MongoDB
-      -  等等
+技术生态一览
+------------
 
-   -  等等
+**通用**\ ：Git-Version Control、GitHub、Basic Terminal Usage、Data
+Structure & Algorithm、Semantic Versioning、SSH、HTTP/HTTPS and
+APIs、Character Encodings、Search、Design Patterns
+
+-  **Web方向**
+
+..
+
+   资料参考：https://github.com/kamranahmedse/developer-roadmap
+
+-  **移动端开发（Android、iOS、Hybrid）**
+
+..
+
+   资料参考：\ `极客时间开源项目~程序员技能图谱`_
+
+-  **DevOps**
+
+DevOps元素周期表
+
+.. figure:: https://cdn.jsdelivr.net/gh/ssmath/mypic/img/20200206221649.png
+   :alt: DevOps Tools
+
+   DevOps Tools
+
+..
+
+   来源：https://xebialabs.com/periodic-table-of-devops-tools/
+
+-  **云原生技术生态**
+
+`CNCF Cloud Native Definition v1.0`_
+
+.. figure:: https://cdn.jsdelivr.net/gh/ssmath/mypic/img/20200206223436.png
+   :alt: landscape
+
+   landscape
+
+..
+
+   landscape来源：\ `cncf/landscape`_
+
+.. _极客时间开源项目~程序员技能图谱: https://github.com/TeamStuQ/skill-map
+.. _CNCF Cloud Native Definition v1.0: https://github.com/cncf/toc/blob/master/DEFINITION.md
+.. _cncf/landscape: https://github.com/cncf/landscape
